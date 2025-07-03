@@ -28,20 +28,23 @@
   - Advice for the driver
 
 
--Key Features
-Driving Pattern Clustering: Uses KMeans algorithm to group driving patterns into two clusters (Safe/Risky).
-                             
-Risk Scoring: Calculates risk score based on speed, hard brakes, weather, and traffic.
+## Key Features
 
-Premium Calculation: Adjusts insurance premium based on the risk score.
+- Driving Pattern Clustering:
+  - Uses the KMeans algorithm to group driving patterns into two clusters (Safe/Risky).
 
-Data Anonymization: Removes personal information (name, license number) before processing.
+- Risk Scoring:
+  - Calculates risk score based on speed, hard brakes, weather, and traffic.
 
-Real-Time Data Handling: Processes each trip as a data stream.
+- Premium Calculation:
+  - Adjusts insurance premium based on the risk score.
 
+- Data Anonymization:
+  - Removes personal information (name, license number) before processing.
 
-Notes
-This program is for demo purposes only.
+- Real-Time Data Handling:
+  - Processes each trip as a data stream.
 
+## Notes
 
-Drive safely!
+- This program is for demo purposes only.
