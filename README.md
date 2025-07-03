@@ -21,6 +21,7 @@
   - Weather Condition (Clear, Rain, Snow, Fog)
   - Traffic Condition (Light, Moderate, Heavy)
 - Add multiple trips (you’ll be asked after each trip)
+- **Minimum two trips are required** for pattern clustering and premium calculation. 
 - View results:
   - Number of processed trips
   - Average risk score
@@ -44,7 +45,19 @@
 
 - Real-Time Data Handling:
   - Processes each trip as a data stream.
+ 
+## Docker Usage
 
+To build and run the system inside Docker:
+
+1. Build the Docker image:
+docker build -t telematics-insurance .
+
+2. Run the container:
+docker run -it telematics-insurance
+
+3. To persist files or logs from the container to your local machine:
+docker run -it -v ${PWD}:/app telematics-insurance
 ## Notes
 
 - This program is for demo purposes only.
