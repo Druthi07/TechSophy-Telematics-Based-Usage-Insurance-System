@@ -1,52 +1,44 @@
-Introduction
-This project is a simple Python program that calculates insurance premiums based on driving data. It features clustering, risk scoring, and real-time data processing.
+## Requirements
 
-Requirements
-Python 3.x
-Required libraries:
-numpy
-pandas
-scikit-learn
+- Python 3.x
+- Required libraries:
+  - numpy
+  - pandas
+  - scikit-learn
 
-To install dependencies, run:
-bash
-pip install numpy pandas scikit-learn
+## How to Use
 
-How to Use
-Run the Code
-In your terminal, execute:
+- Run the code:
+  - In your terminal, execute:
+    ```
+    python <filename>.py
+    ```
+- Enter trip details:
+  - Driver Name
+  - License Number
+  - Average Speed (km/h)
+  - Number of Hard Braking Events
+  - Weather Condition (Clear, Rain, Snow, Fog)
+  - Traffic Condition (Light, Moderate, Heavy)
+- Add multiple trips (you’ll be asked after each trip)
+- View results:
+  - Number of processed trips
+  - Average risk score
+  - Premium amount
+  - Advice for the driver
 
-bash
-python <filename>.py
 
-Enter Trip Details
-Driver Name
-License Number
-Average Speed (km/h)
-Number of Hard Braking Events
-Weather Condition (Clear, Rain, Snow, Fog)
-Traffic Condition (Light, Moderate, Heavy)
+-Key Features
+Driving Pattern Clustering: Uses KMeans algorithm to group driving patterns into two clusters (Safe/Risky).
+                             
+Risk Scoring: Calculates risk score based on speed, hard brakes, weather, and traffic.
 
-Add Multiple Trips
-After each trip, you’ll be asked if you want to add another trip.
+Premium Calculation: Adjusts insurance premium based on the risk score.
 
-View Results
-Number of processed trips
-Average risk score
-Premium amount
-Advice for the driver
+Data Anonymization: Removes personal information (name, license number) before processing.
 
-Key Features
-Driving Pattern Clustering:
-Uses KMeans algorithm to group driving patterns into two clusters (Safe/Risky).
-Risk Scoring:
-Calculates risk score based on speed, hard brakes, weather, and traffic.
-Premium Calculation:
-Adjusts insurance premium based on the risk score.
-Data Anonymization:
-Removes personal information (name, license number) before processing.
-Real-Time Data Handling:
-Processes each trip as a data stream.
+Real-Time Data Handling: Processes each trip as a data stream.
+
 
 Notes
 This program is for demo purposes only.
